@@ -1,0 +1,508 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,300;1,400;1,500&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    padding:56px 0px 400px 0px;
+    background: #010615;
+    color:rgb(200,200,200);
+}
+
+/* button default
+---------------------------- */
+.btn-default {
+    color: #333;
+    background-color: #f8f9fa;
+    border-color: #ccc;
+}
+
+    .btn-default:focus {
+        color: #333;
+        background-color: #e6e6e6;
+        border-color: #8c8c8c;
+    }
+
+    .btn-default:active,
+    .btn-default:hover {
+        color: #333;
+        background-color: #e6e6e6;
+        border-color: #adadad;
+    }
+
+/* button-xs
+---------------------------- */
+.btn-group-xs > .btn, .btn-xs {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+/* showbuttons
+---------------------------- */
+.showbutton {
+    margin: 20px 4px 10px 4px;
+    color: rgb(150,150,150);
+    transition: 0.3s;
+}
+
+.showbuttons button:hover {
+    color: white;
+    background: #00bcd4;
+    transform: scale(1.02);
+}
+
+
+/* pages
+---------------------------- */
+
+.page-link {
+    background: #161b22;
+    color: rgb(113,113,113);
+}
+
+.page-link:hover {
+    background: rgb(50,50,50);
+    color: white;
+}
+
+.active.page-item a {
+    color: #161b22;
+    background: white;
+    border: solid 1px white;
+}
+
+/* ---------------------------- */
+
+.btndetails {
+    color: rgb(113,113,113);
+}
+
+.btndetails:hover {
+    transform: scale(1.05);
+}
+
+.modal.fade {
+    color: black;
+}
+
+li.page-item a {
+    font-size: 0.85rem;
+}
+
+.modalityreference:link {
+    text-decoration: none;
+}
+
+.modalityreference:visited {
+    text-decoration: none;
+}
+
+.modalityreference:hover {
+    text-decoration: none;
+}
+
+.modalityreference:active {
+    text-decoration: none;
+}
+
+.modalityspan {
+    color: lightskyblue;
+}
+
+.modalityspan:hover {
+    color: rgb(113,113,113);
+}
+
+/* searchbar
+---------------------------- */
+
+.searchbardiv {
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    background: white;
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+    box-shadow: 0 0 0 2px rgb(150,150,150);
+}
+
+.searchbardiv .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45px;
+    height: 45px;
+    background: #161b22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.searchbardiv.active {
+    width: 50%;
+}
+
+.searchbardiv .icon::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 3px solid rgb(150,150,150);
+    border-radius: 50%;
+    transform: translate(-3px, -3px);
+}
+
+.searchbardiv .icon::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background: rgb(150,150,150);
+    transform: translate(6px, 6px) rotate(315deg);
+}
+
+.searchbardiv .input {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.searchbardiv .input input {
+    position: absolute;
+    top: 0;
+    right: 45%;
+    width: 55%;
+    height: 100%;
+    border: none;
+    background: white;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.clearinput {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    right: 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clearinput::before {
+    position: absolute;
+    content: '';
+    width: 1.5px;
+    height: 15px;
+    background: rgb(150,150,150);
+    transform: rotate(45deg);
+}
+
+.clearinput::after {
+    position: absolute;
+    content: '';
+    width: 1.5px;
+    height: 15px;
+    background: rgb(150,150,150);
+    transform: rotate(315deg);
+}
+
+.searchbardiv .input input::placeholder {
+    color: rgb(113,113,113);
+}
+
+/* cards
+---------------------------- */
+
+.img-thumbnail {
+    height: 250px;
+    cursor: pointer;
+}
+
+.image {
+    height:300px;
+    cursor: pointer;
+}
+
+.cardclass {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    background: #060c21;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.cardclass:hover {
+    height: 400px;
+}
+
+.cardclass .imageofcard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.cardclass .imageofcard img {
+    max-width: 100%;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.cardclass:hover .imageofcard img {
+    opacity: 1;
+}
+
+.cardclass:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+    border-radius: 10px;
+
+}
+
+.cardclass:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(10px);
+    border-radius: 10px;
+
+}
+
+.cardclass:before,
+.cardclass:after {
+    background: linear-gradient(235deg, #00bcd4, #010615, #00bcd4);
+}
+
+.cardclass .content {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.cardclass:hover .content {
+    opacity: 1;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+/*favourites
+---------------------------- */
+
+.buttonsetfavourites button {
+    border: none;
+    background: none;
+    color: rgb(150,150,150);
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.buttonsetfavourites button:hover {
+    transform: scale(1.3);
+}
+
+
+/*navbar
+---------------------------- */
+
+.navbar {
+    background: #010615;
+}
+
+.nav-link {
+    color: rgb(113,113,113);
+}
+
+.nav-link:hover {
+    transform:scale(1.05);
+    color: white;
+}
+
+.nav-link.ativo {
+    color: lightskyblue;
+}
+
+
+/*footer
+----------------------------- */
+
+footer {
+    position: absolute;
+    width: 100%;
+    background: #161b22;
+    opacity: 0.9;
+    height: 150px;
+    padding: 20px 50px;
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer ul {
+    padding: 0px;
+}
+
+footer .olimpics-icons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .olimpics-icons li{
+    list-style: none;
+}
+
+footer .olimpics-icons li a{
+    font-size: 1.6em;
+    color: rgb(113,113,113);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .olimpics-icons li a:hover{
+    transform: translateY(-10px);
+    color: white;
+}
+
+footer p {
+    color: rgb(113,113,113);
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background:  url(images/wavee.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+
+    }
+}
+
+@keyframes animateWave_02 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+
+    }
+}
+
+
+/* buttons
+---------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+.buttonEdited {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #0162c8, #66e7fc);
+}
+
+.buttonEdited:hover {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #c87501, #fce866);
+}

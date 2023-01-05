@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Olympic Games - About</title>
+    <link rel="icon" type="image/png" href="images/webicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="about.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" tabindex="Olympics"><img src="images/Olympic_rings.svg"
+                    height="24" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="athletes.html"><i
+                                class="fa fa-user"></i> Athletes</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="competitions.html"><i
+                                class="fa fa-trophy"></i> Competitions</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="countries.html"><i
+                                class=" fa fa-flag"></i> Countries</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="games.html"><i
+                                class="fa fa-map-marker"></i> Games</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="modalities.html"><i
+                                class="fa fa-soccer-ball-o"></i> Modalities</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="favourites.html"><i
+                                class="fa fa-heart"></i> Favourites</a></li>
+                    <li class="nav-item"><a class="nav-link ativo" aria-current="page" href="about.html"><i
+                                class="fa fa-info"></i> About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container row" style="display: flex; justify-content: center;">
+        <div class="headoffavs mt-5 w-100 text-center" style="height:300px">
+            <div class="text pt-5">
+                <h3 class="mb-3" style="font-size: 50px; color: rgb(136, 136, 136);">Creators</h3>
+                <p class="mb-5" style="font-size: 20px; color: rgba(113, 113, 113, 0.744);">We hope you are having an
+                    amazing experience here!</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBx">
+                <a id="danilo" data-bs-toggle="modal" data-bs-target="#daniloModal" href="#"><img
+                        src="images/Danilo.jpg"></a>
+            </div>
+            <div class="content">
+                <h2> Danilo Silva <br><span>Licenciatura em Engenharia Informática</span></h2>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgBx">
+                <a id="tomas" data-bs-toggle="modal" data-bs-target="#tomasModal" href="#"><img
+                        src="images/tomas.jpg"></a>
+            </div>
+            <div class="content">
+                <h2> Tomás Santos <br><span>Licenciatura em Engenharia Informática</span></h2>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div class="modal fade" id="tomasModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="background-color: #012f61;">
+                    <div class="row text-light">
+                        <div class="col-6 mt-3 ms-3">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Tomás Santos</h1>
+                        </div>
+                        <div class="col-5 mt-3 text-end"><button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button></div>
+                    </div>
+                    <div class="modal-body text-light">
+                        Hi! <br>
+                        My full name is Tomás Santos Fernandes and I'm Portuguese! I live in Aveiro. <br>
+                        I studied in Dr. Jaime Magalhães Lima school, in Esgueira, until 12th grade.
+                        Now, I'm studying Computer Science and Engineering at Aveiro's University,
+                        looking forward to accomplish my goals. <br>
+                        ITW is, by far, my favourite subject and I wish we had more time to practice and
+                        learn more and more about it. Unfortunately, the time was also our enemy and didn't
+                        allow us to make this project perfect. Yet, I/we hope this'll do. <br>
+                        I loved what I learned this semester!
+                    </div>
+                    <div class="text-end pe-3 pb-2">
+                        <a class="buttonEdited" data-bs-dismiss="modal" href="#">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="daniloModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="background-color: #012f61;">
+                    <div class="row text-light">
+                        <div class="col-6 mt-3 ms-3">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Danilo Silva</h1>
+                        </div>
+                        <div class="col-5 mt-3 text-end"><button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button></div>
+                    </div>
+                    <div class="modal-body text-light">
+                        Hi! <br>
+                        My full name is Danilo Micael Gregório Silva and I'm Portuguese! I live in Aveiro. <br>
+                        I studied in Homem Cristo school, in Aveiro, until 12th grade.
+                        Now, I'm studying Computer Science and Engineering at Aveiro's University. <br>
+                        ITW is one of my favourites subjects and I'm really enjoying working on this project!
+                    </div>
+                    <div class="text-end pe-3 pb-2">
+                        <a class="buttonEdited" data-bs-dismiss="modal" href="#">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container row justify-content-center mt-5">
+        <div class="mt-5 w-100 text-center" style="height:200px">
+            <div class="text pt-5">
+                <h3 class="mb-3" style="font-size: 50px; color: rgb(136, 136, 136);">FAQ'S</h3>
+            </div>
+        </div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What information does the Olimpics website give?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>The Olimpics</strong> website was created to help you better know anything
+                        about the Olimpic Games. So, here you can find information about the athletes, competitions,
+                        coutries, games and modalities all organized using cards and charts.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How can I search in the website?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        There are two possibilities to search in the website. By using the search bar in the main page
+                        you can search everything about the Olimpics (athletes, competitions, coutries, games and
+                        modalities)
+                        and by selecting any option in the autocomplete box you will be direct to the details page of
+                        the option
+                        you'he choosen. The other way to search is using the search bar in the pages of athletes,
+                        modalities, coutries,
+                        games and modalities. Each of these search bars is usefull to search about especific
+                        information.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Did we enjoy developing this website?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Of course. We really loved to work on it because we learned about the websites layout and how it
+                        works. Hope you
+                        enjoy using it!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+    <div class="container row buttonmodal justify-content-center mt-4">
+        <button class="buttonEdited col-3" data-bs-toggle="modal" data-bs-target="#formularioModal" href="#"> Got any Question? </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="formularioModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: #012f61;">
+                <div class="row text-light">
+                    <div class="col-7 mt-3 ms-3">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Leave your question here:</h1>
+                    </div>
+                    <div class="col-4 mt-3 text-end"><button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button></div>
+                </div>
+                <div class="modal-body text-light">
+                    <form id="formsfaqs" action="http://192.168.160.36/FormEcho.aspx" name="faqs" autocomplete="off">
+                        <div class="row form-group">
+                            <label for="Nome" class="col-md-2 col-form-label">Name</label>
+                            <div class="col-md-10">
+                                <input type="text" name="Nome" id="pessoa" class="form-control btn-outline-danger"/>
+                                <div class="d-none col-form-label" style="color: lightskyblue" id="pessoaError"><i class="fa fa-exclamation-triangle"></i>  (Min: 10 letters; Max: 100 letters).</div>
+                            </div>
+                        </div>
+                        <div class="row form-group mt-2">
+                            <label for="email" class="col-md-2 col-form-label">Email</label>
+                            <div class="col-md-10">
+                                <input type="email" name="email" id="email" class="form-control btn-outline-danger" />
+                                <div class="d-none col-form-label" style="color: lightskyblue" id="emailError"><i class="fa fa-exclamation-triangle"></i> (Min: 10 letters; Max: 100 letters).</div>
+                            </div>
+                        </div>
+                        <div class="row form-group mt-2">
+                          <label for="duvtipo" class="col-md-2 col-form-label text-center" >Type of question</label>
+                          <div class="col-md-10">
+                            <div class="form-check">
+                              <input type="radio" name="duvtipo" class="form-check-input " value="bugs"><label class="form-check-label" >Report bugs</label><br />
+                              <input type="radio" name="duvtipo" class="form-check-input" value="duvida" ><label class="form-check-label">Help</label><br />
+                              <input type="radio" name="duvtipo" class="form-check-input" value="outro"><label class="form-check-label" >Other</label>
+                            </div>                            
+                            <div class="d-none col-form-label" style="color: lightskyblue" id="duvtipoError"><i class="fa fa-exclamation-triangle"></i>  (Choose a type of question).</div>
+                          </div>
+                          
+                        </div>
+                        <div class="row form-group">
+                          <label for="duvida" class="col-md-2 col-form-label">Write</label>
+                          <div class="col-md-10">
+                              <textarea type="text" name="duvida" id="duvida" class="form-control btn-outline-danger" style="min-height:80px ;"> </textarea>
+                              <div class="d-none col-form-label" style="color: lightskyblue" id="duvidaError"><i class="fa fa-exclamation-triangle"></i>  (Min: 20 letters; Max: 200 letters).</div>
+                          </div>                             
+                        </div> 
+                        <div class="text-center form-group mt-2"> 
+                            <input type="Submit" name="submitBtn" value="Submit" class="btn btn-primary" />
+                            <input type="reset" name="resetBtn" value="Clear" class="btn btn-secondary" id='clean'/> </div>
+                    </form>
+                </div>
+                <div class="text-end pe-3 pb-2">
+                    <a class="buttonEdited" data-bs-dismiss="modal" href="#">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Working Area -->
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="olimpics-icons">
+            <li><a href="athletes.html"><i class="fa fa-user"></i></a></li>
+            <li><a href="competitions.html"><i class="fa fa-trophy"></i></a></li>
+            <li><a href="countries.html"><i class="fa fa-flag"></i></a></li>
+            <li><a href="games.html"><i class="fa fa-map-marker"></i></a></li>
+            <li><a href="modalities.html"><i class="fa fa-soccer-ball-o"></i></a></li>
+            <li><a href="favourites.html"><i class="fa fa-heart"></i></a></li>
+            <li><a href="about.html"><i class="fa fa-info"></i></a></li>
+        </ul>
+        <div class="text-center">
+            <div>
+                <p>&copy; Introdução as Tecnologias Web - 2022/23</p>
+            </div>
+            <div id="uaLink">
+                <p><a href="http://www.ua.pt" title="Universidade de Aveiro"
+                        style="color: rgb(113,113,113);">Universidade de Aveiro</a></p>
+            </div>
+        </div>
+    </footer>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="about.js"></script>
+</body>
+
+</html>

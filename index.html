@@ -1,0 +1,268 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Olympic Games</title>
+    <link rel="icon" type="image/png" href="/images/webicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href=" https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="index.css" />
+    <style>
+        .carousel {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .carousel-item {
+            z-index: -100;
+            height: 100vh;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .carousel-item:nth-child(1) {
+            background-image: url('images/olympicLogo4k.jpg');
+        }
+
+        .carousel-item:nth-child(2) {
+            background-image: url('images/torch.jpg');
+        }
+
+        .carousel-item:nth-child(3) {
+            background-image: url('images/bolt4k.jpg');
+        }
+
+        .carousel-item:nth-child(4) {
+            background-image: url('images/simon.jpg');
+        }
+
+        .carousel-item:nth-child(5) {
+            background-image: url('images/countries.jpg');
+        }
+
+        .carousel-item:nth-child(6) {
+            background-image: url('images/stadium.jpg');
+        }
+
+        .carousel-item:nth-child(7) {
+            background-image: url('images/games.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl fixed-top" style="position: fixed;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" tabindex="Olympics"
+                title="From Olympics API, by Joaquim Sousa Pinto">
+                <img src="images/Olympic_rings.svg" height="24" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" style="color:white; border: 1px solid white;">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="athletes.html"><i
+                                class="fa fa-user"></i> Athletes</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="competitions.html"><i
+                                class="fa fa-trophy"></i> Competitions</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="countries.html"><i
+                                class=" fa fa-flag"></i> Countries</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="games.html"><i
+                                class="fa fa-map-marker"></i> Games</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="modalities.html"><i
+                                class="fa fa-soccer-ball-o"></i> Modalities</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="favourites.html"><i
+                                class="fa fa-heart"></i> Favourites</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="about.html"><i
+                                class="fa fa-info"></i> About </a></li>
+                </ul>
+                <form class="form-inline" id="forms">
+                    <ul class="navbar-nav row" style="margin-left: 1px;">
+                        <li class="nav-item d-flex">
+                            <input id="mainsearchbar" class="form-control btn-outline-danger " type="search"
+                                placeholder="Search..." aria-label="Search" style="border: none;background-color: rgb(150, 150,150); color: white; opacity: calc(0.3);" autocomplete="off">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Working Area -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>OLYMPIC GAMES</h5>
+                    <p>Welcome to the Olympic epicenter! <br> Swipe <i class="fa fa-arrow-circle-right"></i> </p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>ALL YOU WANT IN ONE PLACE</h5>
+                    <p>See everything. Know everything.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>ATHLETES</h5>
+                    <p>Search for the Olympic athletes and their performances</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>COMPETITIONS & MODALITIES</h5>
+                    <p>Learn all about Olympic Competitions & Modalities</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>COUNTRIES</h5>
+                    <p>Consult all the countries who ever participated in the Olympic Games</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>GAMES</h5>
+                    <p>Meet all the Olympic Games Editions</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>ENJOY MUCH MORE FEAUTURES</h5>
+                    <p>Experience the Olympic Games' vibe as never before</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container">
+    </div>
+    <!-- End of Working Area -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#mainsearchbar").autocomplete({
+                minLength: 3,
+                source: function (request, response) {
+                    $.ajax({
+                        type: "GET",
+                        url: "http://192.168.160.58/Olympics/api/Utils/Search?",
+                        data: {
+                            q: $('#mainsearchbar').val().toLowerCase(),
+                        },
+                        
+                        success: function (data) {
+                            if (!data.length) {
+                                var result = [{
+                                    label: 'There are no results :(',
+                                    value: response.term,
+                                }];
+                                response(result);
+                            } else {
+                                var nData = $.map(data.slice(0, 10), function (value, key) {
+                                    return {
+                                        label: value.Name,
+                                        value: value.Id,
+                                        table: value.TableName,
+                                    }
+                                });
+                                results = $.ui.autocomplete.filter(nData, request.term);
+                                response(results);
+                            }
+                        },
+                        error: function () {
+                            alert("error!");
+                        }
+                    })
+                
+                
+                },
+                select: function (event, ui) {
+                    event.preventDefault();
+                    $("#mainsearchbar").val(ui.item.label);
+                    if (ui.item.table == 'Athletes') {
+                        window.location.href = "./athletesDetails.html?id=" + ui.item.value;
+                    };
+                    if (ui.item.table == 'Competitions') {
+                        window.location.href = "./competitionsDetails.html?id=" + ui.item.value;
+                    };
+                    if (ui.item.table == 'Countries') {
+                        window.location.href = "./countriesDetails.html?id=" + ui.item.value;
+                    };
+                    if (ui.item.table == 'Games') {
+                        window.location.href = "./gameDetails.html?id=" + ui.item.value;
+                    };
+                    if (ui.item.table == 'Modalities') {
+                        window.location.href = "./modalitiesDetails.html?id=" + ui.item.value;
+                    };
+                    
+                },
+
+            }); 
+        });
+
+        $().ready(function() {
+            $("#mainsearchbar").click(function() {
+                $("#mainsearchbar").css({
+                    "background-color": "white",
+                    "opacity": "calc(1)",
+                    "color": "black"
+                });
+            });
+
+            $("#carouselExampleCaptions").click(function() {
+                $("#mainsearchbar").css({
+                    "border": "none", 
+                    "background-color": "rgb(150, 150,150)", 
+                    "color": "white", 
+                    "opacity": "calc(0.3)"
+                });
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
